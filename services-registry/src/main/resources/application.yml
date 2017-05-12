@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: services-registry
+server:
+  port: 8787
+  
+eureka:
+  instance:
+    hostname: localhost
+    non-secure-port: ${server.port}
+  client:
+    register-with-eureka: false
+    fetch-registry: false
